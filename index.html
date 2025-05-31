@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="ALLOW-FROM *">
+    <title>Visor 3D Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="viewer-container"></div>
+    <div id="hotspot-info" class="hotspot-popup" style="display:none;">
+        <div class="hotspot-content">
+            <button class="close-button">&times;</button>
+            <div class="hotspot-text"></div>
+        </div>
+    </div>
+
+    <!-- Three.js y sus dependencias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/RGBELoader.js"></script>
+    
+    <!-- Nuestro código -->
+    <script src="script.js"></script>
+</body>
+</html> 
