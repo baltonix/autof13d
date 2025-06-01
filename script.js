@@ -88,7 +88,7 @@ function init() {
     camera.lookAt(0, 0, 0);
 
     // Crear renderer
-    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.LinearToneMapping;
     renderer.toneMappingExposure = 1;
